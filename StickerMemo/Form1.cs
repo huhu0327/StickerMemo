@@ -72,5 +72,19 @@ namespace StickerMemo
                 bunifuImageButton2.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject("icons8_Pin_50px_1");
             }
         }
+
+        private void bunifuImageButton8_Click(object sender, EventArgs e)
+        {
+            fontDialog1.ShowDialog();
+
+            bunifuCustomTextbox1.Font = fontDialog1.Font;
+        }
+
+        private void bunifuImageButton9_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+
+            bunifuCustomTextbox1.ForeColor = colorDialog1.Color;
+        }
     }
 }
