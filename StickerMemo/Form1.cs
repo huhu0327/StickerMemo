@@ -14,6 +14,8 @@ namespace StickerMemo
     {
         static bool isTop = false;
 
+        static string titleName = "새 메모";
+
         public Form1()
         {
             InitializeComponent();
@@ -75,8 +77,9 @@ namespace StickerMemo
 
         private void bunifuImageButton8_Click(object sender, EventArgs e)
         {
-            fontDialog1.ShowDialog();
+            DialogResult dr = fontDialog1.ShowDialog();
 
+            if(dr == DialogResult.OK)
             bunifuCustomTextbox1.Font = fontDialog1.Font;
         }
 
@@ -85,6 +88,22 @@ namespace StickerMemo
             colorDialog1.ShowDialog();
 
             bunifuCustomTextbox1.ForeColor = colorDialog1.Color;
+        }
+
+        private void bunifuCustomLabel1_DoubleClick(object sender, EventArgs e)
+        {
+            ChangeTitle ct = new ChangeTitle();
+            ct.ShowDialog();
+        }
+
+        public static void ChangeTitle(string text)
+        {
+           titleName = text;
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            bunifuCustomLabel1.Text = titleName;
         }
     }
 }
