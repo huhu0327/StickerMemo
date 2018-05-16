@@ -26,22 +26,22 @@ namespace StickerMemo
 
         private void bunifuImageButton1_MouseHover(object sender, EventArgs e)
         {
-            panel2.BackColor = Color.FromArgb(224, 224, 224);
+            panel4.BackColor = Color.FromArgb(224, 224, 224);
         }
 
         private void bunifuImageButton1_MouseLeave(object sender, EventArgs e)
         {
-            panel2.BackColor = TransparencyKey;
+            panel4.BackColor = TransparencyKey;
         }
 
         private void panel2_MouseHover(object sender, EventArgs e)
         {
-            panel2.BackColor = Color.FromArgb(224, 224, 224);
+            panel4.BackColor = Color.FromArgb(224, 224, 224);
         }
 
         private void panel2_MouseLeave(object sender, EventArgs e)
         {
-            panel2.BackColor = TransparencyKey;
+            panel4.BackColor = TransparencyKey;
         }
 
         private void panel2_Click(object sender, EventArgs e)
