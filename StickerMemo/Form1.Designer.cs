@@ -59,6 +59,9 @@
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel5.SuspendLayout();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton10)).BeginInit();
@@ -103,7 +106,7 @@
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(42, 0);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(329, 42);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(389, 42);
             this.bunifuCustomLabel1.TabIndex = 6;
             this.bunifuCustomLabel1.Text = "새 메모";
             this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -252,6 +255,7 @@
             this.bunifuImageButton6.TabIndex = 0;
             this.bunifuImageButton6.TabStop = false;
             this.bunifuImageButton6.Zoom = 0;
+            this.bunifuImageButton6.Click += new System.EventHandler(this.bunifuImageButton6_Click);
             // 
             // panel8
             // 
@@ -277,6 +281,7 @@
             this.bunifuImageButton5.TabIndex = 0;
             this.bunifuImageButton5.TabStop = false;
             this.bunifuImageButton5.Zoom = 0;
+            this.bunifuImageButton5.Click += new System.EventHandler(this.bunifuImageButton5_Click);
             // 
             // panel7
             // 
@@ -302,15 +307,16 @@
             this.bunifuImageButton4.TabIndex = 0;
             this.bunifuImageButton4.TabStop = false;
             this.bunifuImageButton4.Zoom = 0;
+            this.bunifuImageButton4.Click += new System.EventHandler(this.bunifuImageButton4_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.bunifuCustomTextbox1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(60, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(455, 420);
+            this.panel1.Size = new System.Drawing.Size(515, 420);
             this.panel1.TabIndex = 2;
             // 
             // bunifuCustomTextbox1
@@ -323,7 +329,7 @@
             this.bunifuCustomTextbox1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuCustomTextbox1.Multiline = true;
             this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(455, 378);
+            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(515, 378);
             this.bunifuCustomTextbox1.TabIndex = 2;
             // 
             // panel2
@@ -337,7 +343,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(455, 42);
+            this.panel2.Size = new System.Drawing.Size(515, 42);
             this.panel2.TabIndex = 1;
             // 
             // panel6
@@ -363,13 +369,14 @@
             this.bunifuImageButton3.TabIndex = 5;
             this.bunifuImageButton3.TabStop = false;
             this.bunifuImageButton3.Zoom = 0;
+            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel3.Controls.Add(this.bunifuImageButton2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(371, 0);
+            this.panel3.Location = new System.Drawing.Point(431, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(42, 42);
@@ -395,7 +402,7 @@
             // 
             this.panel4.Controls.Add(this.bunifuImageButton1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(413, 0);
+            this.panel4.Location = new System.Drawing.Point(473, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(42, 42);
@@ -420,6 +427,15 @@
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             this.bunifuImageButton1.MouseLeave += new System.EventHandler(this.bunifuImageButton1_MouseLeave);
             this.bunifuImageButton1.MouseHover += new System.EventHandler(this.bunifuImageButton1_MouseHover);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 25;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -493,6 +509,9 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton9;
         private System.Windows.Forms.Panel panel13;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton10;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
