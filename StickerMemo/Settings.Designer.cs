@@ -30,8 +30,8 @@
         {
             this.titlepanel = new System.Windows.Forms.Panel();
             this.wrappanel = new System.Windows.Forms.Panel();
-            this.listpanel = new System.Windows.Forms.Panel();
             this.contentpanel = new System.Windows.Forms.Panel();
+            this.listpanel = new System.Windows.Forms.Panel();
             this.wrappanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +41,7 @@
             this.titlepanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlepanel.Location = new System.Drawing.Point(0, 0);
             this.titlepanel.Name = "titlepanel";
-            this.titlepanel.Size = new System.Drawing.Size(674, 32);
+            this.titlepanel.Size = new System.Drawing.Size(420, 32);
             this.titlepanel.TabIndex = 1;
             // 
             // wrappanel
@@ -51,30 +51,30 @@
             this.wrappanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.wrappanel.Location = new System.Drawing.Point(0, 32);
             this.wrappanel.Name = "wrappanel";
-            this.wrappanel.Size = new System.Drawing.Size(674, 422);
+            this.wrappanel.Size = new System.Drawing.Size(420, 370);
             this.wrappanel.TabIndex = 2;
+            // 
+            // contentpanel
+            // 
+            this.contentpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contentpanel.Location = new System.Drawing.Point(125, 0);
+            this.contentpanel.Name = "contentpanel";
+            this.contentpanel.Size = new System.Drawing.Size(295, 370);
+            this.contentpanel.TabIndex = 1;
             // 
             // listpanel
             // 
             this.listpanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.listpanel.Location = new System.Drawing.Point(0, 0);
             this.listpanel.Name = "listpanel";
-            this.listpanel.Size = new System.Drawing.Size(149, 422);
+            this.listpanel.Size = new System.Drawing.Size(125, 370);
             this.listpanel.TabIndex = 0;
-            // 
-            // contentpanel
-            // 
-            this.contentpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentpanel.Location = new System.Drawing.Point(149, 0);
-            this.contentpanel.Name = "contentpanel";
-            this.contentpanel.Size = new System.Drawing.Size(525, 422);
-            this.contentpanel.TabIndex = 1;
             // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 454);
+            this.ClientSize = new System.Drawing.Size(420, 402);
             this.Controls.Add(this.wrappanel);
             this.Controls.Add(this.titlepanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

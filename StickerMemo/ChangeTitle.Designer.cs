@@ -32,14 +32,14 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,15 +83,6 @@
             this.panel2.Size = new System.Drawing.Size(324, 48);
             this.panel2.TabIndex = 2;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.bunifuCustomLabel2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(169, 48);
-            this.panel3.TabIndex = 0;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.bunifuCustomLabel3);
@@ -100,19 +91,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(155, 48);
             this.panel4.TabIndex = 1;
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("나눔고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(0, 0);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(169, 48);
-            this.bunifuCustomLabel2.TabIndex = 0;
-            this.bunifuCustomLabel2.Text = "확인";
-            this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuCustomLabel2.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
             // 
             // bunifuCustomLabel3
             // 
@@ -127,6 +105,28 @@
             this.bunifuCustomLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuCustomLabel3.Click += new System.EventHandler(this.bunifuCustomLabel3_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.bunifuCustomLabel2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(169, 48);
+            this.panel3.TabIndex = 0;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Silver;
+            this.bunifuCustomLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("나눔고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(0, 0);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(169, 48);
+            this.bunifuCustomLabel2.TabIndex = 0;
+            this.bunifuCustomLabel2.Text = "확인";
+            this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuCustomLabel2.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
+            // 
             // ChangeTitle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -140,10 +140,11 @@
             this.Name = "ChangeTitle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ChangeTitle";
+            this.TopMost = true;
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

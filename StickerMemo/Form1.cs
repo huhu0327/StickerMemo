@@ -139,6 +139,8 @@ namespace StickerMemo
                 bunifuCustomTextbox1.Text = sr.ReadToEnd();
                 bunifuCustomTextbox1.Select(bunifuCustomTextbox1.TextLength - 1, 0);
 
+                bunifuCustomLabel1.Text = Path.GetFileNameWithoutExtension(fs.Name);
+
                 sr.Close();
             }
         }
